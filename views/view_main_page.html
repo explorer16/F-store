@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Cache-Control" content="private">
+    <title></title>
+    <link type = "text/css" rel = "stylesheet" href = "styles/main_page_style.css">
+</head>
+<body>
+    <div>
+        <div class="nav-bar">
+            <img src="logos/F-logo.png" class="logo">
+            <div class="nav-form">
+                <form class="search-form">
+                    <input type="text" name="search_object" class="search_bar" placeholder="Search...">
+                    <input type="submit" value="Search" class="search-button">
+                    <div class="reg_log-buttons">
+                        <button class="reg_log-button">Registration</button>
+                        <button class="reg_log-button">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <header>
+            <button class="header-button">HOME</button>
+            <button class="header-button">PRODUCTS</button>
+            <button class="header-button">ADRESS</button>
+            <button class="header-button">CONTACTS</button>
+        </header>
+    </div>
+    <article>
+        <div class="filter">
+            <form>
+                <p class="form-category">Data</p>
+                <p class="property-name">Name</p><input type="text" name="name" class="property">
+                <p class="property-name">Autor</p><input type="text" name="autor" class="property">
+                <p class="property-name">Price</p><input type="number" name="price" class="property">
+                <p class="property-name">File format</p><div class="format-radio">
+                    <input type="radio" id="format1"
+                     name="format" value=".pdf" checked>
+                    <label for="contactChoice1">.pdf</label>
+                
+                    <input type="radio" id="format2"
+                     name="format" value=".fb2">
+                    <label for="contactChoice2">.fb2</label>
+                
+                    <input type="radio" id="format3"
+                     name="format" value=".txt">
+                    <label for="contactChoice3">.txt</label>
+                  </div>
+                  <div>
+                    <button type="submit" class="filtr-button">Search</button>
+                  </div>
+            </form>
+        </div>
+        <footer>
+            <img src="logos/footer-logo.png" class="footer-logo">
+        </footer>
+    </article>
+</body>
+</html>
