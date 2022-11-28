@@ -40,6 +40,8 @@ body{
     width:69%;
     height:100%;
     border:2px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
 }
 .search-button{
     display: absolute;
@@ -48,6 +50,8 @@ body{
     background-color: #101D2D;
     color: white;
     font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 .reg_log-buttons{
     position: absolute;
@@ -56,7 +60,17 @@ body{
     width:400px;
     height:60px;
 }
-.reg_log-button{
+.log-button{
+    display: inline;
+    position: relative;
+    margin-left: 10%;
+    height: 100%;
+    width: 100px;
+    background-color: #101D2D;
+    color: white;
+    font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;
+}
+.reg-button{
     display: inline;
     position: relative;
     margin-left: 10%;
