@@ -1,8 +1,13 @@
 <?php
 require ('models/model_db.php');
-//$induction=mysqli_connect('127.0.0.1','root','','bookshop');
 
+    $last_book=4;
+    if(isset($_GET['last_item']))
+    {
+        $last_book=$_GET['last_item'];
+    }
+    $data=get_book_list('book',['id'=>$last_book],['id','name','autor','janr','image']);
 
-require('views/view_books.html');
+require('views/view_books.php');
 
 ?>

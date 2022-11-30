@@ -138,11 +138,11 @@
 }
 </style>
 <div class="filter">
-    <form>
+    <form method="POST">
         <p class="form-category">Фильтр</p>
         <p class="property-name">Имя</p><input type="text" name="name" class="property">
         <p class="property-name">Автор</p><input type="text" name="autor" class="property">
-        <p class="property-name">Цена</p><input type="number" name="price" class="property">
+        <p class="property-name">Жанр</p><input type="number" name="janr" class="property">
         <p class="property-name">Формат файла</p><div class="format-radio">
             <input type="radio" id="format1"
              name="format" value=".pdf" checked>

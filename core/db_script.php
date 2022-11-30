@@ -2,7 +2,7 @@
 
 function execute_query($query){
 	
-	$connection=mysqli_connect('localhost','root','','inet_shop');
+	$connection=mysqli_connect('localhost','root','','bookshop');
 	
 	$result=mysqli_query($connection,$query);
 	
@@ -80,7 +80,7 @@ function build_select_query($table,$where='',$what=''){
 		$what_sql =' * ';
 	}
 	else{
-		//Доделать дома;
+		$what_sql = implode(", ", $what);
 	}
 
 	return "SELECT $what_sql 

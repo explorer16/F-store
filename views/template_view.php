@@ -11,8 +11,8 @@
         <div class="nav-bar">
             <img src="img/template-photos/F-logo.png" class="logo">
             <div class="nav-form">
-                <form class="search-form" action="book_retelling">
-                    <input type="text" name="search_object" class="search_bar" placeholder="Search...">
+                <form class="search-form" action="book_retelling" method="POST">
+                    <input type="text" name="name" class="search_bar" placeholder="Search...">
                     <input type="submit" value="Search" class="search-button">
                     
                 </form>
