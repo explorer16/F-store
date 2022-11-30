@@ -17,8 +17,8 @@
                     
                 </form>
                 <div class="reg_log-buttons">
-                    <button class="reg-button" onclick="window.location.href='registration';">Registration</button>
-                    <button class="log-button" onclick="window.location.href='login';">Login</button>
+                    <button class="reg-button" onclick="window.location.href='registration';">Регистрация</button>
+                    <button class="log-button" onclick="window.location.href='login';">Вход</button>
                 </div>
             </div>
         </div>
