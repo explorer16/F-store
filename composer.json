@@ -1,21 +1,20 @@
 {
-    "name": "explorer/f-store",
-    "description": "It's composer for my first site",
+    "name": "explorer/directory-iterator",
+    "description": "Learning iterators",
     "type": "project",
-    "require": {
-        "guzzlehttp/guzzle": "*"
-    },
-    "license": "Apache-2.0",
-    "autoload": {
-        "psr-4": {
-            "Explorer\\FStore\\": "src/"
-        }
-    },
+    "license": "MIT",
     "authors": [
         {
             "name": "Doniyor Asadullaev",
             "email": "asadullaevdonier@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core",
+            "Interfaces\\": "src/interface"
+        }
+    }
 }

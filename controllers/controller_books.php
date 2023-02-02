@@ -6,7 +6,7 @@ require ('models/model_db.php');
     {
         $last_book=$_GET['last_item'];
     }
-    $data=get_book_list('book',['id'=>$last_book],['id','name','autor','janr','image']);
+    $data=get_book_list('book',['id'=>$last_book],['id','name','autor','janr','image','file']);
 
 require('views/view_books.php');
 

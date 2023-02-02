@@ -30,7 +30,7 @@
         </header>
     </div>
     <article>
-        <?php include_once "controllers/".$controller;?>
+        <?php include_once $controller;?>
         <footer>
             <?php include_once "view_footer.html" ?>
         </footer>
