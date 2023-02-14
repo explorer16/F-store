@@ -17,20 +17,20 @@
                     
                 </form>
                 <div class="reg_log-buttons">
-                    <button class="reg-button" onclick="window.location.href='registration';">Регистрация</button>
-                    <button class="log-button" onclick="window.location.href='login';">Вход</button>
+                    <button class="reg-button" onclick="window.location.href='registration?method=show';">Регистрация</button>
+                    <button class="log-button" onclick="window.location.href='login?method=show';">Вход</button>
                 </div>
             </div>
         </div>
         <header>
-            <button class="header-button" onclick="window.location.href = 'books';">КНИГИ</button>
+            <button class="header-button" onclick="window.location.href = 'main_page';">КНИГИ</button>
             <button class="header-button" onclick="window.location.href = 'basket';">КОРЗИНА</button>
             <button class="header-button" onclick="window.location.href = 'adress';">АДРЕСС</button>
             <button class="header-button" onclick="window.location.href = 'credits';">РАЗРАБОТЧИКИ</button>
         </header>
     </div>
     <article>
-        <?php include_once $controller;?>
+        <?php include_once ('controllers/'.$controller);?>
         <footer>
             <?php include_once "view_footer.html" ?>
         </footer>

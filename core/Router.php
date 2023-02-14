@@ -9,27 +9,44 @@ class Router
     public function __construct()
     {
         $this->path=$_SERVER['REQUEST_URI'];
+        if(isset($_SESSION['token'])){
+            if(time()>$_SESSION['token_created_at']){
+                unset($_SESSION['token']);
+                unset($_SESSION['token_created_at']);
+            }
+        }
     }
 
-    private function show()
+    public function show()
     {
+        $this->route();
         $controller=$this->controller;
+
+        if($controller!='controller_registration.php'&&$controller!='controller_login.php'){
+            if(!isset($_SESSION['token'])&&!isset($_POST['token'])){
+                
+                $controller='controller_login.php';
+                $_GET['method']='show';
+            }
+        }
         require ('views/template_view.php');
     }
 
-    public function route()
+    private function route()
     {
-        $path=explode('/',$this->path);
-        $path=$path[count($path)-1];
+        $path=explode('?',$this->path);
+        $path=explode('/',$path[0]);
 
-        $path=explode('?', $path);
+        array_shift($path);
+        if($path[0]=='F-store'){
+            array_shift($path);
+        }
 
         if($path[0]=='index.php')
-            $path[0]='books';
-        $this->controller='controllers/controller_'.$path[0].'.php';
-        if(!file_exists($this->controller))
-            $this->controller='controllers/controller_404.php';
-        //echo $this->controller;
-        $this->show();
+            header('Location: ./main_page');
+        $this->controller='controller_'.$path[0].'.php';
+        if(!file_exists('controllers/'.$this->controller))
+            $this->controller='controller_404.php';
+
     }
 }

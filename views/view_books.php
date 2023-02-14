@@ -78,16 +78,18 @@
 }
 .conteyner_img{
     position: absolute;
-    top: 10px;
-    left: 10px;
-    height: 90%;
-    width: 40%;
+    height: 100%;
+    width: 33%;
+    border-width: 50px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 .book-img{
     position: absolute;
-    align-content: center;
+    top:3%;
+    left:5%;
     width: auto;
-    height: 100%;
+    height: 90%;
     
 }
 .book-name{
@@ -139,7 +141,7 @@
 </style>
 <div class="filter">
     <form method="POST">
-        <p class="form-category">Фильтр</p>
+        <p class="form-category">Сортировка</p>
         <p class="property-name">Имя</p><input type="text" name="name" class="property">
         <p class="property-name">Автор</p><input type="text" name="autor" class="property">
         <p class="property-name">Жанр</p><input type="number" name="janr" class="property">
@@ -171,7 +173,7 @@
     <p class="autor"><?=$product['autor']?></p>
     <p class="janr"><?=$product['janr']?></p>
     <button class="download-button"><a href='files/<?=$product['file']?>' download><img src="img/template-photos/download-button.png" class="download-image"></a></button>
-    <button class="book_retell_button" onclick="window.location.href = 'book_retelling?id=<?=$product['id']?>';">Описание</button>
+      <button class="book_retell_button" onclick="window.location.href = 'book_retelling?id=<?=$product['id']?>';">Описание</button>
   </div>
   <?php }?>
 </div>

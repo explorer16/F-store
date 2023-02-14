@@ -1,8 +1,8 @@
 <?php
-require ('models/model_db.php');
-//$induction=mysqli_connect('127.0.0.1','root','','bookshop');
 
-
-require('views/view_login.html');
-
-?>
+if($_GET['method']=='show'){
+\Model\Login::show();
+} elseif($_GET['method']=='check'){
+    $user=new \Model\Login();
+    $user->login();
+}

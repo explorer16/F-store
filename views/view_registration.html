@@ -61,7 +61,8 @@
         <div class="form-placeholder">
             <p class="form-name">Регистрация</p>
         </div>
-        <form action="" method="post">
+        <form action="registration?method=checkAndWrite" method="post">
+            <input type="hidden" name="token" value="<?=$token?>">
             <p class="name-data">Имя пользователя</p>
             <input type="text" name="name" placeholder="Имя..." class="form-data">
             <p class="name-data">Пароль</p>
