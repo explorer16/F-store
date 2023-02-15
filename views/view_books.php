@@ -8,7 +8,7 @@
     margin-top: 0;
     width: 250px;
     height: 579px;
-    background-color: rgb(62, 111, 202);
+    background-color: #7796a6;
     border-radius: 10px;
     border-style: double; /* Стиль рамки вокруг параграфа */
     border-width: 6px; /* Толщина границы */
@@ -55,14 +55,14 @@
     background-color: #101D2D;
     color: white;
     font-family: 'Open Sans', sans-serif;
-  }
+}
   .books{
     position: absolute;
     top:0;
     left: 280px;
     width: 1060px;
     height: 590px;
-    background-color: rgb(28, 29, 34);
+    background-color: #bc7d38;
     border-radius: 10px;
 }
 .book{
@@ -73,7 +73,7 @@
     height: 220px;
     margin-top: 30px;
     margin-left: 30px;
-    background-color: rgb(106, 164, 219);
+    background-color: #efd780;
     border-radius: 10px;
 }
 .conteyner_img{
@@ -118,17 +118,18 @@
   bottom:0;
   right:0;
   color: rgb(0, 0, 0);
-  background-color: #006992;
+  background-color: #96897b;
   border-bottom-right-radius: 10px;  
 }
 .book_retell_button{
   position:absolute;
   color: rgb(0, 0, 1);
-  background-color: #006992;
+  background-color: #96897b;
   bottom: 0;
   right: 42px;
   width: 58%;
   height: 36px;
+  font-size: larger;
   font-family:New Century Schoolbook, TeX Gyre Schola, serif;
 }
 .download-image{
