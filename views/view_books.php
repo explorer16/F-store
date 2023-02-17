@@ -7,19 +7,19 @@
     left: 0;
     margin-top: 0;
     width: 250px;
-    height: 579px;
+    height: 590px;
     background-color: #7796a6;
     border-radius: 10px;
     border-style: double; /* Стиль рамки вокруг параграфа */
     border-width: 6px; /* Толщина границы */
-    border-color: #09394d;
+    border-color: black;
 }
 .form-category{
     position:relative;
     display: block;
     margin-top: 10px;
     margin-left: 10px;
-    color:white;
+    color:black;
     font-family: 'Open Sans', sans-serif;
     font-size: 26px;
 }
@@ -28,7 +28,7 @@
     display: block;
     margin-top: 10px;
     margin-left: 10px;
-    color:white;
+    color:black;
     font-family:Son;
     font-size: 20px;
 }
@@ -52,8 +52,8 @@
     display: block;
     margin-top: 10px;
     margin-left: 10px;
-    background-color: #101D2D;
-    color: white;
+    background-color: #cfd8dc;
+    color: black;
     font-family: 'Open Sans', sans-serif;
 }
   .books{
@@ -62,8 +62,11 @@
     left: 280px;
     width: 1060px;
     height: 590px;
-    background-color: #bc7d38;
+    background-color: #e4dcb4;
     border-radius: 10px;
+      border-style: double;
+      border-color: black;
+      border-width: 6px;
 }
 .book{
     position:relative;
@@ -73,7 +76,7 @@
     height: 220px;
     margin-top: 30px;
     margin-left: 30px;
-    background-color: #efd780;
+    background-color: #dbad6a;
     border-radius: 10px;
 }
 .conteyner_img{
@@ -93,15 +96,16 @@
 .book-name{
     position:absolute;
     left: 33%;
-    color:rgb(0, 0, 0);
+    color: black;
     font-family: 'Montserrat';
     font-size: 20px;
+
 }
 .autor{
   position: absolute;
   top: 45px;
   left: 33%;
-  color:rgb(0, 0, 0);
+  color: black;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 17px;
 }
@@ -109,7 +113,7 @@
   position: absolute;
   top: 70px;
   left: 33%;
-  color:rgb(0, 0, 0);
+  color: black;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 15px;
 }
@@ -118,13 +122,13 @@
   bottom:0;
   right:0;
   color: rgb(0, 0, 0);
-  background-color: #96897b;
-  border-bottom-right-radius: 10px;  
+  background-color: #cfd8dc;
+  border-bottom-right-radius: 10px;
 }
 .book_retell_button{
   position:absolute;
   color: rgb(0, 0, 1);
-  background-color: #96897b;
+  background-color: #cfd8dc;
   bottom: 0;
   right: 42px;
   width: 58%;

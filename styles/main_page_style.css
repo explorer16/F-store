@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(228,220,180);
+    background-color: white;
     width:1000px;
     height: 700px;
     overflow: auto;
@@ -9,11 +9,11 @@ body{
     position: absolute;
     width: 99%;
     height: 180px;
-    background-color: #bc7d38;
+    background-color: #e4dcb4;
+    border-color: black;
     border-style: double;
     border-width: 6px;
     border-radius: 10px;
-    border-color: #101D2D;
 
 }
 .logo{
@@ -48,12 +48,13 @@ body{
     border:2px;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
+    background-color: white;
 }
 .search-button{
     position: absolute;
     height:100%;
     width:30%;
-    background-color: #dbad6a;
+    background-color: #a0c1c9;
     color: black;
     font-size: large;
     font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;
@@ -74,7 +75,7 @@ body{
     height: 100%;
     width: 130px;
     font-size: large;
-    background-color: #dbad6a;
+    background-color: #a0c1c9;
     color: black;
     font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;
 }
@@ -85,7 +86,7 @@ body{
     height: 100%;
     width: 130px;
     font-size: large;
-    background-color: #dbad6a;
+    background-color: #a0c1c9;
     color: black;
     font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;
 }
@@ -97,12 +98,15 @@ article{
 }
 footer{
     position: absolute;
-    bottom: 0;
+    bottom: -20px;
     height: 100px;
     width:99%;
-    background-color: rgb(134, 81, 51);
+    background-color: #dbad6a;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    border-color: black;
+    border-style: double;
+    border-width: 6px;
 }
 .footer-logo{
     position: relative;
