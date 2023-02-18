@@ -3,8 +3,8 @@
 .text{
     position: absolute;
     top: 0;
-    left: 5px;
-    width: 80%;
+    left: 20px;
+    width: 50%;
     height: 100%;
 }
 .footer-text{
@@ -12,21 +12,47 @@
     font-size: 15px;
     font-family: Montserrat;
 }
-.git-button{
+.git-page{
     position: absolute;
     top: 25%;
     right: 2%;
     width: 15%;
     height: 50%;
-    background-color: rgb(84, 85, 87);
-    border-radius: 10px;
+    background-color: #cfd8dc;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: 'Noto Serif';
+    font-size: 20px;
+ }
+.dev-page{
+    position: absolute;
+    top: 25%;
+    right: 17%;
+    width: 15%;
+    height: 50%;
+    background-color: #cfd8dc;
     font-family: 'Noto Serif';
     font-size: 20px;
 }
+.adress-page{
+    position: absolute;
+    top: 25%;
+    right: 32%;
+    width: 15%;
+    height: 50%;
+    background-color: #cfd8dc;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: 'Noto Serif';
+    font-size: 20px;
+ }
+
 </style>
 <div class="text">
     <p class="footer-text">Данный сайт написан одним студентом, при консультации с двумя любителями. 
     На момент релиза он может быть недоработан, но, благодаря этому, открыт для общего использования. 
     Впоследствии он будет загружен на гитхаб.</p>
 </div>
-<button class="git-button" onclick="window.location.href = 'https://github.com/explorer16/F-store';">Скачать</button>
+<button class="adress-page" onclick="window.location.href = 'adress';">Адресс</button>
+<button class="dev-page" onclick="window.location.href = 'credits';">Разработчики</button>
+<button class="git-page" onclick="window.location.href = 'https://github.com/explorer16/F-store';">Скачать</button>
