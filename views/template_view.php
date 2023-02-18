@@ -21,7 +21,7 @@
     </div>
 </div>
 <article>
-    <?php include_once $controller;?>
+    <?php include_once 'controllers/'.$controller;?>
     <footer>
         <?php include_once "view_footer.html" ?>
     </footer>
