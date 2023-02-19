@@ -7,7 +7,7 @@
     left: 0;
     margin-top: 0;
     width: 250px;
-    height: 590px;
+    height: 300px;
     background-color: #7796a6;
     border-radius: 10px;
     border-style: double; /* Стиль рамки вокруг параграфа */
@@ -23,29 +23,15 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 26px;
 }
+.property{
+    width: 30px;
+}
 .property-name{
     position:relative;
     display: block;
-    margin-top: 10px;
-    margin-left: 10px;
     color:black;
     font-family:Son;
     font-size: 20px;
-}
-.property{
-    position:relative;
-    display: block;
-    margin-top: 10px;
-    margin-left: 10px;
-    width:100px;
-    height: 30px;
-    border-radius: 10px;
-}
-.format-radio{
-    position:relative;
-    display: block;
-    margin-top: 10px;
-    margin-left: 5px;
 }
 .filtr-button{
     position:relative;
@@ -147,12 +133,11 @@
 <div class="filter">
     <form method="POST">
         <p class="form-category">Сортировка</p>
-        <p class="property-name">по имени</p><input type="text" name="name" class="property">
-        <p class="property-name">по автору</p><input type="text" name="autor" class="property">
-        <p class="property-name">по жанру</p><input type="number" name="janr" class="property">
-
+        <p class="property-name"><input type="radio" class="property" id="format1" name="format" value="name" checked>по имени</p>
+        <p class="property-name"><input type="radio" class="property" id="format1" name="format" value="autor" >по автору</p>
+        <p class="property-name"><input type="radio" class="property" id="format1" name="format" value="janr" >по жанру</p>
           <div>
-            <button type="submit" class="filtr-button">Поиск</button>
+            <button type="submit" class="filtr-button">Показать</button>
           </div>
     </form>
 </div>
