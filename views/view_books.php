@@ -147,22 +147,10 @@
 <div class="filter">
     <form method="POST">
         <p class="form-category">Сортировка</p>
-        <p class="property-name">Имя</p><input type="text" name="name" class="property">
-        <p class="property-name">Автор</p><input type="text" name="autor" class="property">
-        <p class="property-name">Жанр</p><input type="number" name="janr" class="property">
-        <p class="property-name">Формат файла</p><div class="format-radio">
-            <input type="radio" id="format1"
-             name="format" value=".pdf" checked>
-            <label for="contactChoice1">.pdf</label>
-        
-            <input type="radio" id="format2"
-             name="format" value=".fb2">
-            <label for="contactChoice2">.fb2</label>
-        
-            <input type="radio" id="format3"
-             name="format" value=".txt">
-            <label for="contactChoice3">.txt</label>
-          </div>
+        <p class="property-name">по имени</p><input type="text" name="name" class="property">
+        <p class="property-name">по автору</p><input type="text" name="autor" class="property">
+        <p class="property-name">по жанру</p><input type="number" name="janr" class="property">
+
           <div>
             <button type="submit" class="filtr-button">Поиск</button>
           </div>
