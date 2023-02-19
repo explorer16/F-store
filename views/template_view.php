@@ -5,18 +5,19 @@
     <meta http-equiv="Cache-Control" content="private">
     <title></title>
     <link type = "text/css" rel = "stylesheet" href = "styles/main_page_style.css">
+    <title>F-store</title>
 </head>
 <body>
 <div class="nav-bar">
-    <img src="img/template-photos/F-logo.png" class="logo" onclick="window.location.href = 'books';">
+    <img src="img/template-photos/F-logo.png" class="logo" onclick="window.location.href = 'main_page';">
     <div class="nav-form">
         <form class="search-form" action="book_retelling" method="POST">
             <input type="text" name="name" class="search_bar" placeholder="Search...">
             <input type="submit" value="Search" class="search-button">
         </form>
         <div class="reg_log-buttons">
-            <button class="reg-button" onclick="window.location.href='registration';">Регистрация</button>
-            <button class="log-button" onclick="window.location.href='login';">Вход</button>
+            <button class="reg-button" onclick="window.location.href='registration?method=show';">Регистрация</button>
+            <button class="log-button" onclick="window.location.href='login?method=show';">Вход</button>
         </div>
     </div>
 </div>

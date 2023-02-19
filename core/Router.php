@@ -44,6 +44,8 @@ class Router
 
         if($path[0]=='index.php')
             header('Location: ./main_page');
+        if($path[0]=='books')
+            $path[0]='main_page';
         $this->controller='controller_'.$path[0].'.php';
         if(!file_exists('controllers/'.$this->controller))
             $this->controller='controller_404.php';

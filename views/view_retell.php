@@ -7,7 +7,7 @@
     height: 75%;
     top: 2%;
     left: 2%;
-    background-color: rgb(79, 159, 224);
+    background-color: #a0c1c9;
     border-radius: 10px;
 }
 .image-area{
@@ -51,7 +51,7 @@ img{
     left: 30%;
     width: 60%;
     height: auto;
-    background-color: rgb(90, 171, 236);
+    background-color: #a0c1c9;
     border-radius: 10px;
 }
 .retelling-text{
