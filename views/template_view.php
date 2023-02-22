@@ -12,6 +12,7 @@
     <img src="img/template-photos/F-logo.png" class="logo" onclick="window.location.href = 'main_page';">
     <div class="nav-form">
         <form class="search-form" action="book_retelling" method="POST">
+            <input type="hidden" name="method" value="searchByName">
             <input type="text" name="name" class="search_bar" placeholder="Search...">
             <input type="submit" value="Search" class="search-button">
         </form>

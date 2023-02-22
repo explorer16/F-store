@@ -15,7 +15,8 @@
         "psr-4": {
             "Core\\": "core",
             "Interfaces\\": "src/interface",
-            "Model\\": "models"
+            "Model\\": "models",
+            "UserClasess\\": "src/userClass"
         }
     }
 }

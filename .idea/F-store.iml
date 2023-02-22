@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/core" isTestSource="false" packagePrefix="Core\" />
       <sourceFolder url="file://$MODULE_DIR$/src/interface" isTestSource="false" packagePrefix="Interfaces\" />
       <sourceFolder url="file://$MODULE_DIR$/models" isTestSource="false" packagePrefix="Model\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/userClass" isTestSource="false" packagePrefix="UserClasess\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
     </content>
     <orderEntry type="inheritedJdk" />

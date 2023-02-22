@@ -71,17 +71,17 @@ img{
 </style>
 <div class="retell-area">
     <div class="image-area">
-        <img src="<?=$product['image']?>">
+        <img src="<?=$book['image']?>">
     </div>
     <div class="name-pos">
-        <p class="book-name"><?=$product['name']?></p>
+        <p class="book-name"><?=$book['name']?></p>
     </div>
     <div class="property">
-        <p class="property-text"><?=$product['autor']?></p>
-        <p class="property-text"><?=$product['janr']?></p>
+        <p class="property-text"><?=$book['autor']?></p>
+        <p class="property-text"><?=$book['janr']?></p>
     </div>
     <div class="retelling-pos">
-        <p class="retelling-text"><?=$product['brief_retelling']?></p>
+        <p class="retelling-text"><?=$book['brief_retelling']?></p>
     </div>
     <button class="return-button" onclick="window.location.href='books';">Вернуться к списку книг</button>
 </div>

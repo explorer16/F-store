@@ -1,47 +1,6 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-  .filter{
-    position: absolute;
-    top:0;
-    left: 0;
-    margin-top: 0;
-    width: 250px;
-    height: 300px;
-    background-color: #7796a6;
-    border-radius: 10px;
-    border-style: double; /* Стиль рамки вокруг параграфа */
-    border-width: 6px; /* Толщина границы */
-    border-color: black;
-}
-.form-category{
-    position:relative;
-    display: block;
-    margin-top: 10px;
-    margin-left: 10px;
-    color:black;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 26px;
-}
-.property{
-    width: 30px;
-}
-.property-name{
-    position:relative;
-    display: block;
-    color:black;
-    font-family:Son;
-    font-size: 20px;
-}
-.filtr-button{
-    position:relative;
-    display: block;
-    margin-top: 10px;
-    margin-left: 10px;
-    background-color: #cfd8dc;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-}
   .books{
     position: absolute;
     top:0;
@@ -127,20 +86,43 @@
 .download-image{
   width: 30px;
   height: 30px;
-  border: 0ch;
+  border: 0;
+}
+.page-button-form{
+    position:absolute;
+    background-color: transparent;
+    width: 60%;
+    height: 8%;
+    left: 20%;
+    bottom: 0;
+    border-radius: 10px;
+}
+.prev{
+    position: relative;
+    height: 100%;
+    width: 20%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #cfd8dc;
+}
+.last{
+    position: relative;
+    height: 100%;
+    width: 20%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: -4px;
+    background-color: #cfd8dc;
+}
+.page-button{
+    position: relative;
+    height: 100%;
+    align-self: center;
+    background-color: #a0c1c9;
+    border-radius: 10px;
+    margin-left: -4px;
 }
 </style>
-<div class="filter">
-    <form method="POST">
-        <p class="form-category">Сортировка</p>
-        <p class="property-name"><input type="radio" class="property" id="format1" name="format" value="name" checked>по имени</p>
-        <p class="property-name"><input type="radio" class="property" id="format1" name="format" value="autor" >по автору</p>
-        <p class="property-name"><input type="radio" class="property" id="format1" name="format" value="janr" >по жанру</p>
-          <div>
-            <button type="submit" class="filtr-button">Показать</button>
-          </div>
-    </form>
-</div>
 <div class="books">
   <?php foreach($data as $product){?>
   <div class="book">
@@ -154,4 +136,19 @@
       <button class="book_retell_button" onclick="window.location.href = 'book_retelling?id=<?=$product['id']?>';">Описание</button>
   </div>
   <?php }?>
+  <form class="page-button-form">
+    <?php
+    if($countPages<=5&&$countPages!=1):
+        for($i=1;$i<=$countPages;$i++):?>
+          <input type="submit" class="page-button" name="page" value="<?=$i?>" style="width:<?=100/$countPages?>%" >
+        <?php endfor;
+        elseif ($countPages>5):?>
+            <input type="submit" class="prev" name="page" value="Начало">
+            <?php $middleId=\UserClasess\calculateMiddleButton::calculate($currentPage,$countPages);
+            for($i=$middleId-2;$i<=$middleId+2;$i++):?>
+                <input type="submit" class="page-button" name="page" value="<?=$i?>" style="width:<?=100/$countPages?>%" >
+            <?php endfor;?>
+            <input type="submit" class="last" name="page" value="Конец">
+      <?php endif; ?>
+  </form>
 </div>
