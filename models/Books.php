@@ -6,7 +6,8 @@ use UserClasess\Change;
 
 class Books
 {
-    private $page,$min_id_book, $max_id_book, $countPages;
+    private $page,$min_id_book, $max_id_book;
+    public $countPages;
     public function __construct($page,$method){
         $this->page=$page;
         $this->min_id_book=$page*4-3;
@@ -37,11 +38,13 @@ class Books
 
         for($i=1;$i<=4;$i++){
             $data[$i]=$statement->fetch(\PDO::FETCH_ASSOC);
+            if(!is_array($data[$i])) unset($data[$i]);
         }
 
-        for($i=1;$i<=4;$i++){
+        for($i=1;$i<=count($data);$i++){
             $data[$i]['janr']=$this->getJanr($data[$i]['id']);
         }
+
         return $data;
     }
     private static function getJanr($id){
@@ -53,7 +56,9 @@ class Books
         $statement->execute();
 
         $row=$statement->fetch(\PDO::FETCH_ASSOC);
-        array_shift($row);
+        if(is_array($row)){
+            array_shift($row);
+        }
 
         foreach ($row as $name=>$singleJanr){
             if($singleJanr=='1'){

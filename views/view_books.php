@@ -103,6 +103,7 @@
     width: 20%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    margin-left: -4px;
     background-color: #cfd8dc;
 }
 .last{
@@ -146,7 +147,7 @@
             <input type="submit" class="prev" name="page" value="Начало">
             <?php $middleId=\UserClasess\calculateMiddleButton::calculate($currentPage,$countPages);
             for($i=$middleId-2;$i<=$middleId+2;$i++):?>
-                <input type="submit" class="page-button" name="page" value="<?=$i?>" style="width:<?=100/$countPages?>%" >
+                <input type="submit" class="page-button" name="page" value="<?=$i?>" style="width:12%" >
             <?php endfor;?>
             <input type="submit" class="last" name="page" value="Конец">
       <?php endif; ?>
