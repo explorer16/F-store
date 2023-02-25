@@ -128,12 +128,12 @@
   <?php foreach($data as $product){?>
   <div class="book">
     <div class="conteyner_img">
-      <img src="<?=$product['image']?>" class="book-img">
+      <img src="static\img\books\<?=$product['image']?>" class="book-img">
     </div>
     <p class="book-name"><?=$product['name']?></p>
     <p class="autor"><?=$product['autor']?></p>
     <p class="janr"><?=$product['janr']?></p>
-    <button class="download-button"><a href='files/<?=$product['file']?>' download><img src="img/template-photos/download-button.png" class="download-image"></a></button>
+    <button class="download-button"><a href='static/files/<?=$product['file']?>' download><img src="static/img/template-photos/download-button.png" class="download-image"></a></button>
       <button class="book_retell_button" onclick="window.location.href = 'book_retelling?id=<?=$product['id']?>';">Описание</button>
   </div>
   <?php }?>
@@ -144,12 +144,12 @@
           <input type="submit" class="page-button" name="page" value="<?=$i?>" style="width:<?=100/$countPages?>%" >
         <?php endfor;
         elseif ($countPages>5):?>
-            <input type="submit" class="prev" name="page" value="Начало">
+            <input type="submit" class="prev" name="page" value="First">
             <?php $middleId=\UserClasess\calculateMiddleButton::calculate($currentPage,$countPages);
             for($i=$middleId-2;$i<=$middleId+2;$i++):?>
                 <input type="submit" class="page-button" name="page" value="<?=$i?>" style="width:12%" >
             <?php endfor;?>
-            <input type="submit" class="last" name="page" value="Конец">
+            <input type="submit" class="last" name="page" value="Last">
       <?php endif; ?>
   </form>
 </div>

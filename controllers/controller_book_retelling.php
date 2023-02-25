@@ -2,7 +2,7 @@
 
 $bookId=$_GET['id'];
 
-$book=\Model\Books::getBook($bookId);
+$book=\Model\Books::getInfoOfBook($bookId);
 
 
 require('views/view_retell.php');

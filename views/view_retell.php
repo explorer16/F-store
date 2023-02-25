@@ -71,7 +71,7 @@ img{
 </style>
 <div class="retell-area">
     <div class="image-area">
-        <img src="<?=$book['image']?>">
+        <img src="static/img/books/<?=$book['image']?>">
     </div>
     <div class="name-pos">
         <p class="book-name"><?=$book['name']?></p>
