@@ -2,11 +2,7 @@
 
 if(!isset($_GET['page'])){
     $currentPage=1;
-    if(isset($_POST['method'])){
-        $method=$_POST['method'];
-    } else {
-        $method='takeAll';
-    }
+    $_SESSION['method'] = $_POST['method'] ?? 'takeAll';
 } else {
     $currentPage=$_GET['page'];
 }

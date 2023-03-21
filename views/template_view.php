@@ -9,14 +9,11 @@
 </head>
 <body>
 <div class="nav-bar">
-    <form method="post">
-        <button style="background-color: transparent; border-color: transparent"><img src="static/img/template-photos/F-logo.png" class="logo" onclick="window.location.href = 'main_page'; "></button>
-        <input type="hidden" name="method" value="takeAll">
-    </form>
+        <img src="static/img/template-photos/F-logo.png" class="logo" onclick="window.location.href = 'main_page'; ">
     <div class="nav-form">
         <form class="search-form" action="books" method="POST">
             <input type="hidden" name="method" value="searchLike">
-            <input type="text" name="name" class="search_bar" placeholder="Search...">
+            <input type="search" name="name" class="search_bar" placeholder="Search...">
             <input type="submit" value="Search" class="search-button">
         </form>
         <div class="reg_log-buttons">
